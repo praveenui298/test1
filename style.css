@@ -57,12 +57,16 @@ nav > .search{
 }
 .megamenu > ul{
     display: flex; flex-direction: column; position: static; width: 150px;
+    padding: 10px 0;
+}
+.megamenu > ul > li > a{
+    padding: 15px 15px; display: block
 }
 .megamenu ul li{
-    padding: 20px 0 20px; display: block;
+     display: block;
 }
 .megamenu ul li ul{
-    position: absolute; top: 0; left: 100%; min-width: 220px;
+    position: absolute; top: 0; left: 100%; min-width: 220px; height: 100%; padding: 10px 0;
 }
 .megamenu ul li > ul li{
     display: block;
@@ -72,14 +76,32 @@ nav ul li:hover .megamenu{
 }
 .megamenu > ul > li > ul,
 .megamenu > ul > li > ul > li > ul{
-    display: none;
+    display: none; padding: 10px 0; height: 100%; background: tan;
+}
+.megamenu ul li > ul li a{
+    padding: 15px 15px; display: block;
 }
 .megamenu > ul > li:hover > ul,
 .megamenu > ul > li > ul > li:hover > ul
 {
     display: block;
 }
-
+.megamenu > ul > li > ul > li > ul > li > ul {
+min-width: 450px;
+}
+.megamenu > ul > li > ul > li > ul > li > ul > li{
+    display: inline-block; width: 49.4%; vertical-align: top;
+    padding: 0;
+}
+.megamenu > ul > li > ul > li > ul > li > ul > li a{
+ color: red;
+}
+.megamenu_image{
+    height: 300px; padding: 10px;
+}
+.megamenu_image img{
+    height: 100%; width: auto;
+}
 
 @media only screen and (max-width: 991px){
     #toggler{
@@ -108,7 +130,7 @@ nav ul li:hover .megamenu{
     nav{
         position: fixed; top: 0; left: -100%; background: black; color: white;
         width: 100%; height: 100vh; float: none; padding: 15px; transition: .5s;
-        z-index: 9999;
+        z-index: 9999; margin: 0;
     }
     nav ul li{
         display: block; width: 100%; padding: 10px 0 10px 0;
@@ -128,5 +150,23 @@ nav ul li:hover .megamenu{
     input[type="button"]{
         border: 1px solid white; color: white;  padding: 8px 15px; background: none;
         font-size: 16px; 
+    }
+    .megamenu{
+        position: static; background: transparent; display: none;
+    }
+    nav ul li:hover .megamenu{
+        display: block;
+    }
+    .megamenu > ul{
+        height: 300px; overflow: scroll;
+    }
+    .megamenu_image{
+        display: none;
+    }
+    .megamenu ul li ul{
+        position: static;
+    }
+    .megamenu > ul > li > ul > li > ul > li > ul > li{
+      display: block; width: 100%;
     }
 }
