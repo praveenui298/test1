@@ -49,7 +49,7 @@ nav > .search{
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 991px){
     #toggler{
         display:inline-block; position: static; 
         font-size: 28px; float: left;
