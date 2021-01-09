@@ -27,7 +27,7 @@ header:after{
     display: block; clear: both;
 }
 .logo{
-    display: inline-block; float: left; margin: 6px 0 0;
+    display: inline-block; float: left; margin: 6px 0 0; color: orangered;
 }
 nav{
     display: inline-block; max-width: 100%; width: auto; float: left; margin: 6px 0 0;
