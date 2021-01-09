@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <ion-icon name="menu-outline" id="toggler"></ion-icon>
+            <div class="logo">PNKTECH</div>
+            <nav>
+                <ion-icon name="close-circle-outline" id="close-btn"></ion-icon>
+                <ul>
+                    <li><a href="">Home Component</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </nav>
+         <div class="cart">
+                <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+            </div>
+            <div class="user">
+                <ion-icon name="person-add-outline" class="user-icon"></ion-icon>
+            </div>
+            <div class="search">
+                <input type="text" class="search-field">
+                <input type="button" class="search-btn" value="search">
+                <div class="message"></div>
+            </div>
+         
+        </header>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#toggler').click(function(){
+            $('body').addClass('nav-open');
+        })
+        $('#close-btn').click(function(){
+            $('body').removeClass('nav-open')
+        })
+        if($(window).width() <= 767){
+            $("header .search").appendTo("nav");
+        }
+    </script>
+</body>
+</html>
