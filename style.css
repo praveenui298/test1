@@ -87,10 +87,10 @@ nav ul li:hover .megamenu{
     display: block;
 }
 .megamenu > ul > li > ul > li > ul > li > ul {
-min-width: 450px;
+min-width: 450px; font-size: 0;
 }
 .megamenu > ul > li > ul > li > ul > li > ul > li{
-    display: inline-block; width: 49.4%; vertical-align: top;
+    display: inline-block; width: 50%; vertical-align: top;
     padding: 0;
 }
 .megamenu > ul > li > ul > li > ul > li > ul > li a{
